@@ -1,3 +1,3 @@
-web: gunicorn yogesh-python-django.wsgi:application --log-file - --log-level debug
+web: gunicorn mac.wsgi:application --log-file - --log-level debug
 python manage.py collectstatic --noinput
 manage.py migrate
